@@ -1,0 +1,21 @@
+{
+    "files.associations": {
+        "a2dp_vendor_ldac.h": "c",
+        "lhdcv5bt_dec.h": "c",
+        "a2dp_vendor_lhdcv5.h": "c",
+        "a2dp_codec_api.h": "c",
+        "string.h": "c",
+        "ldacbt.h": "c",
+        "ldac.h": "c",
+        "ldacbt_internal.h": "c",
+        "atomic": "c",
+        "compare": "c",
+        "cstddef": "c",
+        "limits": "c",
+        "memory": "c",
+        "type_traits": "c",
+        "vector": "c",
+        "xmemory": "c",
+        "xutility": "c"
+    }
+}
