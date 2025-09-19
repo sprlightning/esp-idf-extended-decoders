@@ -1,7 +1,13 @@
-/*
+/**
  * SPDX-FileCopyrightText: 2016 The Android Open Source Project
  *
  * SPDX-License-Identifier: Apache-2.0
+ * 
+ * a2dp_vendor_ldac.c
+ * 
+ * a2dp_vendor.c <-> a2dp_vendor_ldac.c <-> a2dp_vendor_ldacbt_decoder.c <- ldacBT.h
+ * 
+ * a2dp_vendor.c <-> a2dp_vendor_ldac.c <-> a2dp_vendor_ldac_decoder.c <- ldacdec.h
  */
 
 #include <string.h>
@@ -55,8 +61,8 @@ static const tA2DP_DECODER_INTERFACE a2dp_decoder_interface_ldac = {
     NULL,  // decoder_reset,
     a2dp_ldac_decoder_decode_packet_header,
     a2dp_ldac_decoder_decode_packet,
-    NULL,  // decoder_start
-    NULL,  // decoder_suspend
+    a2dp_ldac_decoder_start,  // decoder_start
+    a2dp_ldac_decoder_suspend,  // decoder_suspend
     a2dp_ldac_decoder_configure,
 };
 
